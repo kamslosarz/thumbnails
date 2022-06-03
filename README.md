@@ -8,8 +8,10 @@ Instalacja:
 ``(php7.4) composer install``
 
 Testy:
-``(php7.4) composer install --dev``
-``php7.4 bin/console thumbnails:create``
+````
+(php7.4) composer install --dev
+php7.4 bin/console thumbnails:create
+````
 
 Użycie:
 

@@ -5,11 +5,11 @@ Wymagania:
 
 Instalacja:
 
-``(php7.4) composer install``
+``(php7.4) composer install --no-dev``
 
 Testy:
 ````
-(php7.4) composer install --dev
+(php7.4) composer install
 php7.4 bin/console thumbnails:create
 ````
 

@@ -1,0 +1,20 @@
+# Read the documentation at https://github.com/thephpleague/flysystem-bundle/blob/master/docs/1-getting-started.md
+flysystem:
+  storages:
+    local.storage:
+      adapter: 'local'
+      options:
+        directory: '%env(DEFAULT_LOCAL_PATH)%'
+    ftp.storage:
+      adapter: 'ftp'
+      options:
+        host: '%env(DEFAULT_FTP_HOSTNAME)%'
+        username: '%env(DEFAULT_FTP_USERNAME)%'
+        password: '%env(DEFAULT_FTP_PASSWORD)%'
+        port: '%env(int:DEFAULT_FTP_PORT)%'
+        root: '%env(DEFAULT_FTP_PATH)%'
+        passive: true
+        ssl: false
+        timeout: 30
+        ignore_passive_address: ~
+        utf8: false
